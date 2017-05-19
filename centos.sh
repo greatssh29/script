@@ -179,16 +179,13 @@ else
 fi
 chmod +x /usr/bin/bmon
 
-# downlaod script
 cd /usr/bin
-wget -O userexpire "https://raw.githubusercontent.com/adammau2/script-vps/master/autoexpire.sh"
-echo "python /usr/bin/speedtest.py --share" | tee speedtest
-wget -O speedtest "https://raw.githubusercontent.com/adammau2/script-vps/master/speedtest_cli.py"
+wget -O bench "https://github.com/AdityaWg/auto-instaler-vps/raw/master/centos6/conf/bench-network.sh"
+wget -O mem "https://github.com/AdityaWg/auto-instaler-vps/raw/master/centos6/conf/ps_mem.py"
 
 # sett permission
-chmod +x userexpire
-chmod +x speedtest
-chmod +x speedtest_cli.py
+chmod +x bench
+chmod +x mem
 
 # cron
 cd
